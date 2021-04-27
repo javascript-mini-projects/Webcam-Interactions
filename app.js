@@ -5,7 +5,7 @@ let videoStream = function () {
     video = document.querySelector("#video");
 
   (function deviceSetup() {
-    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    if (navigator.mediaDevices) {
       navigator.mediaDevices
         .getUserMedia({
           video: true,
